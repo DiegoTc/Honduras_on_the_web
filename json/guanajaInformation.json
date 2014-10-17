@@ -1,842 +1,834 @@
 [
     {
-        "id": 106,
-        "facebookId": "308921169292602",
-        "likes": 0,
-        "link": "https://www.facebook.com/pages/Visitando-Mi-Isla-Querida-Guanaja-Con-Mi-Amor-Clau/308921169292602",
-        "nombre": "Visitando Mi Isla Querida Guanaja Con Mi Amor Clau",
-        "categoria": "Local business"
-    },
-    {
-        "id": 106,
-        "facebookId": "829803467060194",
-        "likes": 0,
-        "link": "https://www.facebook.com/pages/Artemisa-y-Guanajay/829803467060194",
-        "nombre": "Artemisa y Guanajay",
-        "categoria": "Company"
-    },
-    {
-        "id": 106,
-        "facebookId": "926016904093286",
-        "likes": 0,
-        "link": "https://www.facebook.com/pages/Ciencias-Medicas-Guanajay/926016904093286",
-        "nombre": "Ciencias Medicas Guanajay",
-        "categoria": "University"
-    },
-    {
-        "id": 106,
-        "facebookId": "357031747771384",
-        "likes": 0,
-        "link": "https://www.facebook.com/pages/Sphaerodactylus-guanajae/357031747771384",
-        "nombre": "Sphaerodactylus guanajae",
-        "categoria": "Interest"
-    },
-    {
-        "id": 1,
-        "facebookId": "133392376709692",
-        "likes": 0,
-        "link": "https://www.facebook.com/pages/Carniceria-Guanajato/133392376709692",
-        "nombre": "Carniceria Guanajato",
-        "categoria": "Local business"
-    },
-    {
-        "id": 106,
-        "facebookId": "139288079422456",
-        "likes": 0,
-        "link": "https://www.facebook.com/pages/Granulina-guanajatabey/139288079422456",
-        "nombre": "Granulina guanajatabey",
-        "categoria": "Interest"
-    },
-    {
-        "id": 106,
-        "facebookId": "1494723747450119",
-        "likes": 0,
-        "link": "https://www.facebook.com/pages/Guanaja/1494723747450119",
-        "nombre": "Guanaja",
-        "categoria": "Song"
-    },
-    {
-        "id": 106,
-        "facebookId": "1386076051655225",
-        "likes": 0,
-        "link": "https://www.facebook.com/pages/Guanahani/1386076051655225",
-        "nombre": "Guanahani",
-        "categoria": "Landmark"
-    },
-    {
-        "id": 106,
-        "facebookId": "368948253258367",
-        "likes": 0,
-        "link": "https://www.facebook.com/pages/Raul-Cepero-Bonilla-guanajay/368948253258367",
-        "nombre": "Raul Cepero Bonilla, guanajay",
-        "categoria": "School"
-    },
-    {
-        "id": 106,
-        "facebookId": "256648767828439",
-        "likes": 0,
-        "link": "https://www.facebook.com/pages/Industria-Automotriz-de-Guanajay/256648767828439",
-        "nombre": "Industria Automotriz de Guanajay",
-        "categoria": "Interest"
-    },
-    {
-        "id": 106,
-        "facebookId": "1530059623877512",
-        "likes": 0,
-        "link": "https://www.facebook.com/pages/Roat%C3%A1n-Guanaja-Beauty/1530059623877512",
-        "nombre": "Roatán & Guanaja Beauty",
-        "categoria": "Just for fun"
-    },
-    {
-        "id": 106,
         "facebookId": "252145858144117",
         "likes": 0,
         "link": "https://www.facebook.com/pages/Guanaja-Airport/252145858144117",
         "nombre": "Guanaja Airport",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
+        "facebookId": "1530059623877512",
+        "likes": 0,
+        "link": "https://www.facebook.com/pages/Roat%C3%A1n-Guanaja-Beauty/1530059623877512",
+        "nombre": "Roatán & Guanaja Beauty",
+        "ciudad": "Guanaja",
+        "categoria": "Just for fun"
+    },
+    {
+        "facebookId": "926016904093286",
+        "likes": 0,
+        "link": "https://www.facebook.com/pages/Ciencias-Medicas-Guanajay/926016904093286",
+        "nombre": "Ciencias Medicas Guanajay",
+        "ciudad": "Guanaja",
+        "categoria": "University"
+    },
+    {
+        "facebookId": "308921169292602",
+        "likes": 0,
+        "link": "https://www.facebook.com/pages/Visitando-Mi-Isla-Querida-Guanaja-Con-Mi-Amor-Clau/308921169292602",
+        "nombre": "Visitando Mi Isla Querida Guanaja Con Mi Amor Clau",
+        "ciudad": "Guanaja",
+        "categoria": "Local business"
+    },
+    {
+        "facebookId": "368948253258367",
+        "likes": 0,
+        "link": "https://www.facebook.com/pages/Raul-Cepero-Bonilla-guanajay/368948253258367",
+        "nombre": "Raul Cepero Bonilla, guanajay",
+        "ciudad": "Guanaja",
+        "categoria": "School"
+    },
+    {
+        "facebookId": "133392376709692",
+        "likes": 0,
+        "link": "https://www.facebook.com/pages/Carniceria-Guanajato/133392376709692",
+        "nombre": "Carniceria Guanajato",
+        "ciudad": "Guanaja",
+        "categoria": "Local business"
+    },
+    {
+        "facebookId": "1494723747450119",
+        "likes": 0,
+        "link": "https://www.facebook.com/pages/Guanaja/1494723747450119",
+        "nombre": "Guanaja",
+        "ciudad": "Guanaja",
+        "categoria": "Song"
+    },
+    {
         "facebookId": "869342186418995",
         "likes": 0,
         "link": "https://www.facebook.com/pages/Guanaja-wireless/869342186418995",
         "nombre": "Guanaja wireless",
+        "ciudad": "Guanaja",
         "categoria": "Company"
     },
     {
-        "id": 106,
+        "facebookId": "139288079422456",
+        "likes": 0,
+        "link": "https://www.facebook.com/pages/Granulina-guanajatabey/139288079422456",
+        "nombre": "Granulina guanajatabey",
+        "ciudad": "Guanaja",
+        "categoria": "Interest"
+    },
+    {
+        "facebookId": "357031747771384",
+        "likes": 0,
+        "link": "https://www.facebook.com/pages/Sphaerodactylus-guanajae/357031747771384",
+        "nombre": "Sphaerodactylus guanajae",
+        "ciudad": "Guanaja",
+        "categoria": "Interest"
+    },
+    {
         "facebookId": "726855927354541",
         "likes": 0,
         "link": "https://www.facebook.com/pages/Guanajayabo/726855927354541",
         "nombre": "Guanajayabo",
+        "ciudad": "Guanaja",
         "categoria": "City"
     },
     {
-        "id": 106,
+        "facebookId": "829803467060194",
+        "likes": 0,
+        "link": "https://www.facebook.com/pages/Artemisa-y-Guanajay/829803467060194",
+        "nombre": "Artemisa y Guanajay",
+        "ciudad": "Guanaja",
+        "categoria": "Company"
+    },
+    {
+        "facebookId": "256648767828439",
+        "likes": 0,
+        "link": "https://www.facebook.com/pages/Industria-Automotriz-de-Guanajay/256648767828439",
+        "nombre": "Industria Automotriz de Guanajay",
+        "ciudad": "Guanaja",
+        "categoria": "Interest"
+    },
+    {
+        "facebookId": "1386076051655225",
+        "likes": 0,
+        "link": "https://www.facebook.com/pages/Guanahani/1386076051655225",
+        "nombre": "Guanahani",
+        "ciudad": "Guanaja",
+        "categoria": "Landmark"
+    },
+    {
         "facebookId": "276920202371177",
         "likes": 1,
         "link": "https://www.facebook.com/pages/Guanajato/276920202371177",
         "nombre": "Guanajato",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
-        "facebookId": "138282262862652",
-        "likes": 2,
-        "link": "https://www.facebook.com/pages/Guanaja-Airport/138282262862652",
-        "nombre": "Guanaja Airport",
-        "categoria": "Airport"
-    },
-    {
-        "id": 1,
         "facebookId": "167309173280851",
         "likes": 2,
         "link": "https://www.facebook.com/pages/Tienda-Guanajato/167309173280851",
         "nombre": "Tienda Guanajato",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
-        "facebookId": "164812033710729",
-        "likes": 3,
-        "link": "https://www.facebook.com/pages/Universidad-de-Guanajauto/164812033710729",
-        "nombre": "Universidad de Guanajauto",
-        "categoria": "Education"
+        "facebookId": "138282262862652",
+        "likes": 2,
+        "link": "https://www.facebook.com/pages/Guanaja-Airport/138282262862652",
+        "nombre": "Guanaja Airport",
+        "ciudad": "Guanaja",
+        "categoria": "Airport"
     },
     {
-        "id": 106,
         "facebookId": "1506334822927377",
         "likes": 3,
         "link": "https://www.facebook.com/pages/RoatanGuanajaUtila/1506334822927377",
         "nombre": "Roatan,Guanaja,Utila",
+        "ciudad": "Guanaja",
         "categoria": "Tours/sightseeing"
     },
     {
-        "id": 106,
         "facebookId": "259119567606984",
         "likes": 4,
         "link": "https://www.facebook.com/pages/Raspados-Guanajal/259119567606984",
         "nombre": "Raspados Guanajal",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "218106224976703",
         "likes": 4,
         "link": "https://www.facebook.com/pages/Celaya-Guanajato/218106224976703",
         "nombre": "Celaya, Guanajato",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
-        "facebookId": "164473840420155",
-        "likes": 5,
-        "link": "https://www.facebook.com/pages/Guanajautos/164473840420155",
-        "nombre": "Guanajautos",
-        "categoria": "Local business"
-    },
-    {
-        "id": 106,
         "facebookId": "143691008982862",
         "likes": 5,
         "link": "https://www.facebook.com/pages/Guanajatabey/143691008982862",
         "nombre": "Guanajatabey",
+        "ciudad": "Guanaja",
         "categoria": "Interest"
     },
     {
-        "id": 1,
-        "facebookId": "106794789464771",
-        "likes": 6,
-        "link": "https://www.facebook.com/pages/Hotel-Guanaja-Guanaja-Island-Honduras/106794789464771",
-        "nombre": "Hotel Guanaja - Guanaja Island, Honduras",
+        "facebookId": "164473840420155",
+        "likes": 5,
+        "link": "https://www.facebook.com/pages/Guanajautos/164473840420155",
+        "nombre": "Guanajautos",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
-        "facebookId": "205810062840057",
-        "likes": 6,
-        "link": "https://www.facebook.com/pages/Guanajato/205810062840057",
-        "nombre": "Guanajato",
-        "categoria": "Local business"
-    },
-    {
-        "id": 1,
         "facebookId": "285840094942603",
         "likes": 6,
         "link": "https://www.facebook.com/caisa.omnibus",
         "nombre": "Empresa Productora de Omnibus CAISA",
+        "ciudad": "Guanaja",
         "categoria": "Company"
     },
     {
-        "id": 106,
-        "facebookId": "489142134466814",
-        "likes": 8,
-        "link": "https://www.facebook.com/pages/Guanajal/489142134466814",
-        "nombre": "Guanajal",
+        "facebookId": "205810062840057",
+        "likes": 6,
+        "link": "https://www.facebook.com/pages/Guanajato/205810062840057",
+        "nombre": "Guanajato",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
-        "facebookId": "171668749675488",
-        "likes": 8,
-        "link": "https://www.facebook.com/pages/Guanaja/171668749675488",
-        "nombre": "Guanaja",
-        "categoria": "Education"
+        "facebookId": "106794789464771",
+        "likes": 6,
+        "link": "https://www.facebook.com/pages/Hotel-Guanaja-Guanaja-Island-Honduras/106794789464771",
+        "nombre": "Hotel Guanaja - Guanaja Island, Honduras",
+        "ciudad": "Guanaja",
+        "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "170691622996580",
         "likes": 8,
         "link": "https://www.facebook.com/pages/guanaja/170691622996580",
         "nombre": "guanaja",
+        "ciudad": "Guanaja",
         "categoria": "School"
     },
     {
-        "id": 106,
+        "facebookId": "489142134466814",
+        "likes": 8,
+        "link": "https://www.facebook.com/pages/Guanajal/489142134466814",
+        "nombre": "Guanajal",
+        "ciudad": "Guanaja",
+        "categoria": "Local business"
+    },
+    {
+        "facebookId": "171668749675488",
+        "likes": 8,
+        "link": "https://www.facebook.com/pages/Guanaja/171668749675488",
+        "nombre": "Guanaja",
+        "ciudad": "Guanaja",
+        "categoria": "Education"
+    },
+    {
         "facebookId": "147293032050093",
         "likes": 9,
         "link": "https://www.facebook.com/pages/Jacks-Guanaja/147293032050093",
         "nombre": "@Jack's, Guanaja",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "362739700519623",
         "likes": 13,
         "link": "https://www.facebook.com/pages/Savannah-Bight-Guanaja/362739700519623",
         "nombre": "Savannah Bight, Guanaja.",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 1,
         "facebookId": "341837152577421",
         "likes": 14,
         "link": "https://www.facebook.com/pages/Jacks-Place/341837152577421",
         "nombre": "Jack's Place",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "230190163678137",
         "likes": 15,
         "link": "https://www.facebook.com/pages/Mitch-Guanaja/230190163678137",
         "nombre": "Mitch, Guanaja",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "551106594902743",
         "likes": 15,
         "link": "https://www.facebook.com/pages/Le%C3%B3n-Guanajato/551106594902743",
         "nombre": "León Guanajato",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "323649581023614",
         "likes": 16,
         "link": "https://www.facebook.com/pages/Guanaja-Talgua/323649581023614",
         "nombre": "Guanaja, Talgua",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "268036070051445",
         "likes": 18,
         "link": "https://www.facebook.com/pages/Yoghurt-Casero-De-Guanajauto/268036070051445",
         "nombre": "Yoghurt Casero De Guanajauto",
+        "ciudad": "Guanaja",
         "categoria": "Food/grocery"
     },
     {
-        "id": 106,
         "facebookId": "254495077926394",
         "likes": 19,
         "link": "https://www.facebook.com/pages/Comit%C3%A9-de-Emergencia-Municipal-CODEM-GUANAJA/254495077926394",
         "nombre": "Comité de Emergencia Municipal (CODEM) GUANAJA",
+        "ciudad": "Guanaja",
         "categoria": "Government organization"
     },
     {
-        "id": 106,
         "facebookId": "137139929725563",
         "likes": 21,
         "link": "https://www.facebook.com/pages/GUANAJA/137139929725563",
         "nombre": "GUANAJA",
+        "ciudad": "Guanaja",
         "categoria": "Community"
     },
     {
-        "id": 106,
         "facebookId": "234522523352899",
         "likes": 23,
         "link": "https://www.facebook.com/pages/Grahams-Place-Guanaja-Honduras/234522523352899",
         "nombre": "Graham's Place, Guanaja, Honduras",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 1,
         "facebookId": "121624034519057",
         "likes": 24,
         "link": "https://www.facebook.com/pages/Camino-De-Guanajauato/121624034519057",
         "nombre": "Camino De Guanajauato",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "235228583249947",
         "likes": 28,
         "link": "https://www.facebook.com/pages/Harry-H-Hunter-Airport-Guanaja-Bay-Islands/235228583249947",
         "nombre": "Harry H. Hunter Airport, Guanaja, Bay Islands.",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "607781125940991",
         "likes": 30,
         "link": "https://www.facebook.com/pages/Guanaja-y-sus-criticas-juveniles/607781125940991",
         "nombre": "Guanaja y sus criticas juveniles",
+        "ciudad": "Guanaja",
         "categoria": "Magazine"
     },
     {
-        "id": 106,
         "facebookId": "374429466058219",
         "likes": 34,
         "link": "https://www.facebook.com/pages/Autodefensas-Civiles-Guanajato-y-Michoacan-AC/374429466058219",
         "nombre": "Autodefensas Civiles Guanajato y Michoacan A.C.",
+        "ciudad": "Guanaja",
         "categoria": "Church/religious organization"
     },
     {
-        "id": 1,
         "facebookId": "225297580946695",
         "likes": 40,
         "link": "https://www.facebook.com/pages/Gift-and-party-Shop/225297580946695",
         "nombre": "Gift and party Shop",
+        "ciudad": "Guanaja",
         "categoria": "Event planning/event services"
     },
     {
-        "id": 106,
         "facebookId": "140066152731405",
         "likes": 44,
         "link": "https://www.facebook.com/pages/Guanaja-HOME/140066152731405",
         "nombre": "Guanaja! HOME",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "325510797482677",
         "likes": 46,
         "link": "https://www.facebook.com/pages/Guanaja-Honduras-Islas/325510797482677",
         "nombre": "Guanaja Honduras Islas",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "215677675249827",
         "likes": 50,
         "link": "https://www.facebook.com/pages/Mi-Casa-Too-the-Bight/215677675249827",
         "nombre": "Mi Casa Too the Bight",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "183314655054568",
         "likes": 58,
         "link": "https://www.facebook.com/pages/Barcelona-Fans-En-Guanaja-Y-Todo-El-Mundo/183314655054568",
         "nombre": "Barcelona Fans En Guanaja Y Todo El Mundo.",
+        "ciudad": "Guanaja",
         "categoria": "Sports team"
     },
     {
-        "id": 106,
         "facebookId": "159985644125710",
         "likes": 60,
         "link": "https://www.facebook.com/pages/Salvemos-Guanaja-Lets-Save-Guanaja/159985644125710",
         "nombre": "Salvemos Guanaja / Let's Save Guanaja",
+        "ciudad": "Guanaja",
         "categoria": "Political party"
     },
     {
-        "id": 106,
         "facebookId": "125392557648953",
         "likes": 63,
         "link": "https://www.facebook.com/pages/Guanaja-Bay-Islands/125392557648953",
         "nombre": "Guanaja, Bay Islands.",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "381443861921256",
         "likes": 64,
         "link": "https://www.facebook.com/CentroCristianoShalomGuanajay",
         "nombre": "Centro Cristiano Shalom Guanajay,Cuba",
+        "ciudad": "Guanaja",
         "categoria": "Church/religious organization"
     },
     {
-        "id": 106,
         "facebookId": "411748265551370",
         "likes": 65,
         "link": "https://www.facebook.com/DentalSolutionClinicGuanaja",
         "nombre": "Dental Solution Clinic Guanaja",
+        "ciudad": "Guanaja",
         "categoria": "Health/medical/pharmaceuticals"
     },
     {
-        "id": 106,
         "facebookId": "676622099052652",
         "likes": 71,
         "link": "https://www.facebook.com/pages/Herbalife-Guanaja/676622099052652",
         "nombre": "Herbalife Guanaja",
+        "ciudad": "Guanaja",
         "categoria": "Health/beauty"
     },
     {
-        "id": 106,
         "facebookId": "147665478634916",
         "likes": 75,
         "link": "https://www.facebook.com/pages/club-de-ajedrez-capablanca-de-Leon-Guanajato-AC/147665478634916",
         "nombre": "club de ajedrez capablanca de Leon Guanajato A.C",
+        "ciudad": "Guanaja",
         "categoria": "Sports league"
     },
     {
-        "id": 106,
         "facebookId": "482375848494750",
         "likes": 91,
         "link": "https://www.facebook.com/pages/Retaurante-Guanajauto/482375848494750",
         "nombre": "Retaurante Guanajauto",
+        "ciudad": "Guanaja",
         "categoria": "Restaurant/cafe"
     },
     {
-        "id": 106,
         "facebookId": "148054911966966",
         "likes": 92,
         "link": "https://www.facebook.com/pages/Guanaja-Mangrove-Restoration/148054911966966",
         "nombre": "Guanaja Mangrove Restoration",
+        "ciudad": "Guanaja",
         "categoria": "Community"
     },
     {
-        "id": 106,
         "facebookId": "516196491794000",
         "likes": 93,
         "link": "https://www.facebook.com/pages/Sophies-Fine-Jewelry/516196491794000",
         "nombre": "Sophie's Fine Jewelry",
+        "ciudad": "Guanaja",
         "categoria": "Shopping/retail"
     },
     {
-        "id": 106,
         "facebookId": "142678599142440",
         "likes": 95,
         "link": "https://www.facebook.com/pages/Guanajay-Cuba/142678599142440",
         "nombre": "Guanajay, Cuba",
+        "ciudad": "Guanaja",
         "categoria": "Community"
     },
     {
-        "id": 106,
         "facebookId": "226304037536836",
         "likes": 98,
         "link": "https://www.facebook.com/AdventistaHispanadelCayo",
         "nombre": "Iglesia Adventista Hispana del Cayo  Guanaja",
+        "ciudad": "Guanaja",
         "categoria": "Church/religious organization"
     },
     {
-        "id": 106,
         "facebookId": "613658655360475",
-        "likes": 100,
+        "likes": 101,
         "link": "https://www.facebook.com/pages/Powery-Asociados/613658655360475",
         "nombre": "Powery & Asociados",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "166542456848415",
         "likes": 103,
         "link": "https://www.facebook.com/Bupes13",
         "nombre": "Bupes 13 el terror de silao guanajato",
+        "ciudad": "Guanaja",
         "categoria": "Public figure"
     },
     {
-        "id": 106,
         "facebookId": "241783009193646",
         "likes": 117,
         "link": "https://www.facebook.com/pages/guanajayense-ausentes/241783009193646",
         "nombre": "guanajayense ausentes",
+        "ciudad": "Guanaja",
         "categoria": "Community"
     },
     {
-        "id": 106,
         "facebookId": "239605229415631",
         "likes": 121,
         "link": "https://www.facebook.com/pages/Juzgados-Civiles-Poder-Judicial-Guanajato-Sede-Le%C3%B3n/239605229415631",
         "nombre": "Juzgados Civiles, Poder Judicial Guanajato. Sede León",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "256728304376680",
         "likes": 140,
         "link": "https://www.facebook.com/pages/jose-de-la-luz-y-caballero-guanajay-la-habana-cuba/256728304376680",
         "nombre": "jose de la luz y caballero guanajay la habana cuba",
+        "ciudad": "Guanaja",
         "categoria": "School"
     },
     {
-        "id": 106,
         "facebookId": "304512926286052",
         "likes": 142,
         "link": "https://www.facebook.com/pages/Islas-De-La-Bah%C3%ADa-Guanaja/304512926286052",
         "nombre": "Islas De La Bahía, Guanaja",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "73517693688",
         "likes": 143,
         "link": "https://www.facebook.com/guanajaguide.com",
         "nombre": "GuanajaGuide.com - #1 travel guide site for Guanaja, Bay Islands",
+        "ciudad": "Guanaja",
         "categoria": "Local/travel website"
     },
     {
-        "id": 106,
         "facebookId": "241472892710712",
         "likes": 149,
         "link": "https://www.facebook.com/tropicalairlines",
         "nombre": "Tropical Airlines",
+        "ciudad": "Guanaja",
         "categoria": "Travel/leisure"
     },
     {
-        "id": 106,
         "facebookId": "434027943315160",
         "likes": 152,
         "link": "https://www.facebook.com/BicaGuanaja",
         "nombre": "BICA Guanaja",
+        "ciudad": "Guanaja",
         "categoria": "Non-governmental organization (ngo)"
     },
     {
-        "id": 106,
         "facebookId": "308244566025843",
-        "likes": 153,
+        "likes": 154,
         "link": "https://www.facebook.com/pages/GuanaJam-Producciones/308244566025843",
         "nombre": "GuanaJam Producciones",
+        "ciudad": "Guanaja",
         "categoria": "Arts/entertainment/nightlife"
     },
     {
-        "id": 106,
         "facebookId": "405357609474917",
         "likes": 158,
         "link": "https://www.facebook.com/pages/Guanaja-Tours-Salsa-clases/405357609474917",
         "nombre": "Guanaja Tours Salsa clases",
+        "ciudad": "Guanaja",
         "categoria": "Community"
     },
     {
-        "id": 106,
         "facebookId": "387395081333317",
         "likes": 166,
         "link": "https://www.facebook.com/MunicipalidaddeGuanaja",
         "nombre": "Municipalidad De Guanaja ( Bonacca Municipality )",
+        "ciudad": "Guanaja",
         "categoria": "Government organization"
     },
     {
-        "id": 106,
         "facebookId": "409806932413756",
         "likes": 167,
         "link": "https://www.facebook.com/hotel.alexanderguanajaisladelabahia",
         "nombre": "Hotel Alexander Guanaja Isla de la Bahia",
+        "ciudad": "Guanaja",
         "categoria": "Hotel"
     },
     {
-        "id": 106,
         "facebookId": "253396028099695",
-        "likes": 172,
+        "likes": 175,
         "link": "https://www.facebook.com/GuanajaForSale",
         "nombre": "Guanaja For Sale",
+        "ciudad": "Guanaja",
         "categoria": "Company"
     },
     {
-        "id": 106,
-        "facebookId": "1400221700216948",
-        "likes": 178,
-        "link": "https://www.facebook.com/guanajadventists",
-        "nombre": "Guanaja Adventists",
-        "categoria": "Church/religious organization"
-    },
-    {
-        "id": 106,
         "facebookId": "173306132814183",
         "likes": 179,
         "link": "https://www.facebook.com/pages/Partido-Liberal-de-Guanaja/173306132814183",
         "nombre": "Partido Liberal de Guanaja",
+        "ciudad": "Guanaja",
         "categoria": "Political party"
     },
     {
-        "id": 106,
-        "facebookId": "212694822257237",
-        "likes": 186,
-        "link": "https://www.facebook.com/pages/Proyecto-Reforestaci%C3%B3n-de-Mangle-Guanaja/212694822257237",
-        "nombre": "Proyecto  Reforestación de Mangle Guanaja",
-        "categoria": "Non-governmental organization (ngo)"
+        "facebookId": "1400221700216948",
+        "likes": 181,
+        "link": "https://www.facebook.com/guanajadventists",
+        "nombre": "Guanaja Adventists",
+        "ciudad": "Guanaja",
+        "categoria": "Church/religious organization"
     },
     {
-        "id": 106,
         "facebookId": "500155123390331",
         "likes": 188,
         "link": "https://www.facebook.com/GuanajaFitnessCenter",
         "nombre": "Guanaja Fitness Center",
+        "ciudad": "Guanaja",
         "categoria": "Sports/recreation/activities"
     },
     {
-        "id": 106,
+        "facebookId": "212694822257237",
+        "likes": 189,
+        "link": "https://www.facebook.com/pages/Proyecto-Reforestaci%C3%B3n-de-Mangle-Guanaja/212694822257237",
+        "nombre": "Proyecto  Reforestación de Mangle Guanaja",
+        "ciudad": "Guanaja",
+        "categoria": "Non-governmental organization (ngo)"
+    },
+    {
         "facebookId": "204075569631275",
         "likes": 207,
         "link": "https://www.facebook.com/pages/Cooperativa-De-Ahorro-y-Credito-Guanaja-LTDA/204075569631275",
         "nombre": "Cooperativa De Ahorro y Credito Guanaja LTDA",
+        "ciudad": "Guanaja",
         "categoria": "Bank/financial institution"
     },
     {
-        "id": 106,
         "facebookId": "384117648284529",
         "likes": 208,
         "link": "https://www.facebook.com/unodeguanajay",
         "nombre": "Uno de Guanajay",
+        "ciudad": "Guanaja",
         "categoria": "Community"
     },
     {
-        "id": 106,
         "facebookId": "422806991085092",
         "likes": 212,
         "link": "https://www.facebook.com/pages/Guanaja-Conch-Festival/422806991085092",
         "nombre": "Guanaja Conch Festival",
+        "ciudad": "Guanaja",
         "categoria": "Community organization"
     },
     {
-        "id": 106,
-        "facebookId": "540101392762135",
-        "likes": 229,
-        "link": "https://www.facebook.com/pages/Guanaja-Properties/540101392762135",
-        "nombre": "Guanaja Properties",
-        "categoria": "Company"
-    },
-    {
-        "id": 106,
         "facebookId": "134796123250659",
-        "likes": 229,
+        "likes": 231,
         "link": "https://www.facebook.com/pages/Guanaja-Honduras/134796123250659",
         "nombre": "Guanaja Honduras",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
+        "facebookId": "540101392762135",
+        "likes": 231,
+        "link": "https://www.facebook.com/pages/Guanaja-Properties/540101392762135",
+        "nombre": "Guanaja Properties",
+        "ciudad": "Guanaja",
+        "categoria": "Company"
+    },
+    {
         "facebookId": "1457572557824428",
-        "likes": 235,
+        "likes": 236,
         "link": "https://www.facebook.com/pages/Vogue-Boutique/1457572557824428",
         "nombre": "Vogue Boutique",
+        "ciudad": "Guanaja",
         "categoria": "Shopping/retail"
     },
     {
-        "id": 106,
         "facebookId": "144378562334805",
-        "likes": 241,
+        "likes": 243,
         "link": "https://www.facebook.com/pages/Bonacca-Island/144378562334805",
         "nombre": "Bonacca Island",
+        "ciudad": "Guanaja",
         "categoria": "Education"
     },
     {
-        "id": 106,
         "facebookId": "219697398050005",
         "likes": 247,
         "link": "https://www.facebook.com/HotelGuanaja",
         "nombre": "Hotel Guanaja",
+        "ciudad": "Guanaja",
         "categoria": "Hotel"
     },
     {
-        "id": 106,
         "facebookId": "818691371491116",
-        "likes": 262,
+        "likes": 269,
         "link": "https://www.facebook.com/guanajapride",
         "nombre": "Guanaja PRIDE TOURS",
+        "ciudad": "Guanaja",
         "categoria": "Transportation"
     },
     {
-        "id": 106,
         "facebookId": "140208326037384",
         "likes": 279,
         "link": "https://www.facebook.com/pages/Guanajato-Restaurante/140208326037384",
         "nombre": "Guanajato Restaurante",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "1417968861802152",
-        "likes": 290,
+        "likes": 291,
         "link": "https://www.facebook.com/pages/MUNICIPALIDAD-DE-GUANAJA/1417968861802152",
         "nombre": "MUNICIPALIDAD DE GUANAJA",
+        "ciudad": "Guanaja",
         "categoria": "Community"
     },
     {
-        "id": 106,
         "facebookId": "274309989344542",
         "likes": 304,
         "link": "https://www.facebook.com/guanajanews",
         "nombre": "Guanaja News",
+        "ciudad": "Guanaja",
         "categoria": "Non-profit organization"
     },
     {
-        "id": 106,
         "facebookId": "564712816906122",
-        "likes": 309,
+        "likes": 310,
         "link": "https://www.facebook.com/BonnaccaIslandProperties",
         "nombre": "Bonnacca Island Properties",
+        "ciudad": "Guanaja",
         "categoria": "Real estate"
     },
     {
-        "id": 106,
         "facebookId": "427205077343017",
-        "likes": 325,
+        "likes": 326,
         "link": "https://www.facebook.com/pages/ANTRO-Bar-Lounge-Guanaja-Bay-Island/427205077343017",
         "nombre": "ANTRO Bar & Lounge, Guanaja Bay Island",
+        "ciudad": "Guanaja",
         "categoria": "Bar"
     },
     {
-        "id": 106,
         "facebookId": "306222949475868",
         "likes": 385,
         "link": "https://www.facebook.com/pages/La-Giralda-Guanaja/306222949475868",
         "nombre": "La Giralda Guanaja",
+        "ciudad": "Guanaja",
         "categoria": "Hotel"
     },
     {
-        "id": 106,
         "facebookId": "177484682427325",
         "likes": 402,
         "link": "https://www.facebook.com/pages/Guanajal/177484682427325",
         "nombre": "Guanajal",
+        "ciudad": "Guanaja",
         "categoria": "Community"
     },
     {
-        "id": 106,
         "facebookId": "1453642158210217",
         "likes": 518,
         "link": "https://www.facebook.com/pages/1er-Festival-Internacional-de-Metales-Guanajauto-2014/1453642158210217",
         "nombre": "1er Festival Internacional de Metales \"Guanajauto 2014\"",
+        "ciudad": "Guanaja",
         "categoria": "University"
     },
     {
-        "id": 106,
         "facebookId": "447342015366012",
         "likes": 524,
         "link": "https://www.facebook.com/pages/Mi-Casa-Too/447342015366012",
         "nombre": "Mi Casa Too",
+        "ciudad": "Guanaja",
         "categoria": "Restaurant/cafe"
     },
     {
-        "id": 106,
         "facebookId": "151164188270086",
         "likes": 527,
         "link": "https://www.facebook.com/pages/Island-House/151164188270086",
         "nombre": "Island House",
+        "ciudad": "Guanaja",
         "categoria": "Hotel"
     },
     {
-        "id": 106,
         "facebookId": "209377142456937",
-        "likes": 581,
+        "likes": 586,
         "link": "https://www.facebook.com/pages/Guanaja-International-Fishing-Tournament/209377142456937",
         "nombre": "Guanaja International Fishing Tournament",
+        "ciudad": "Guanaja",
         "categoria": "Sports league"
     },
     {
-        "id": 106,
         "facebookId": "477036405764770",
-        "likes": 673,
+        "likes": 675,
         "link": "https://www.facebook.com/pages/Guanaja-Divers/477036405764770",
         "nombre": "Guanaja Divers",
+        "ciudad": "Guanaja",
         "categoria": "Attractions/things to do"
     },
     {
-        "id": 106,
         "facebookId": "110575875631240",
         "likes": 680,
         "link": "https://www.facebook.com/pages/Guanajay-Cuba/110575875631240",
         "nombre": "Guanajay, Cuba",
+        "ciudad": "Guanaja",
         "categoria": "City"
     },
     {
-        "id": 106,
         "facebookId": "185526228153643",
-        "likes": 693,
+        "likes": 694,
         "link": "https://www.facebook.com/La.Giralda.Guanaja",
         "nombre": "La Giralda Guanaja",
+        "ciudad": "Guanaja",
         "categoria": "Hotel"
     },
     {
-        "id": 106,
         "facebookId": "150910988303650",
         "likes": 972,
         "link": "https://www.facebook.com/FlyFishGuanaja",
         "nombre": "Fly Fish Guanaja",
+        "ciudad": "Guanaja",
         "categoria": "Travel/leisure"
     },
     {
-        "id": 106,
         "facebookId": "436023129776870",
         "likes": 1040,
         "link": "https://www.facebook.com/GuanajaRealEstate",
         "nombre": "Guanaja Real Estate",
+        "ciudad": "Guanaja",
         "categoria": "Real estate"
     },
     {
-        "id": 106,
         "facebookId": "235636506541811",
         "likes": 1125,
         "link": "https://www.facebook.com/pages/Guanaja-Caribbean-Cottages-Resort/235636506541811",
         "nombre": "Guanaja Caribbean Cottages Resort",
+        "ciudad": "Guanaja",
         "categoria": "Hotel"
     },
     {
-        "id": 106,
         "facebookId": "332871347597",
-        "likes": 1410,
+        "likes": 1411,
         "link": "https://www.facebook.com/pages/Guanaja-Honduras/332871347597",
         "nombre": "Guanaja, Honduras",
+        "ciudad": "Guanaja",
         "categoria": "Local business"
     },
     {
-        "id": 106,
         "facebookId": "108698929153954",
         "likes": 3279,
         "link": "https://www.facebook.com/pages/Guanaja/108698929153954",
         "nombre": "Guanaja",
+        "ciudad": "Guanaja",
         "categoria": "City"
     }
 ]
