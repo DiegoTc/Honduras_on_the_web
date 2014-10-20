@@ -9,30 +9,57 @@ and open the template in the editor.
         <title>Honduras on Facebook</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
+        <link href="//cdn.datatables.net/1.10.3/css/jquery.dataTables.min.css" rel="stylesheet">
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.datatables.net/1.10.3/js/jquery.dataTables.min.js"></script>
         <script>
-            var json1;
+            var json1, copyjson=[];
             $(document).ready(function() {
+                $('#example').dataTable( {
+                    "ajax": "topToLess.json",
+                    "columns": [
+                        { "data": "facebookId" },
+                        { "data": "likes" },
+                        { "data": "link" },
+                        { "data": "nombre" },
+                        { "data": "ciudad" },
+                        { "data": "categoria" }
+                    ]
+                } );
+            } );
+            /*$(document).ready(function() {
                 /* code here */ 
-                 var json= (function() {
+            /*     var json= (function() {
                     var json = null;
                     $.ajax({
                         'async': false,
                         'global': false,
-                        'url': "AllHonduras.json",
+                        'url': "topToLess.json",
                         'dataType': "json",
                         'success': function (data) {
-                            json = data;
-                            json1=data;
-                            console.log(data);
+                            
                         }
                     });
-                    return json;
+                   
                 })();
-            });
+            });*/
         </script>
     </head>
     <body>
         <div>TODO write content</div>
+        <table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>facebookId</th>
+                <th>likes</th>
+                <th>link</th>
+                <th>nombre</th>
+                <th>ciudad</th>
+                <th>categoria</th>
+            </tr>
+        </thead>
+ 
+       
+    </table>
     </body>
 </html>
