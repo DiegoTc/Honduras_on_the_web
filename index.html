@@ -15,17 +15,34 @@ and open the template in the editor.
         <script>
             var json1, copyjson=[];
             $(document).ready(function() {
-                $('#example').dataTable( {
+               $('#example').dataTable( {
                     "ajax": "topToLess.json",
+                    "pageLength": 10,
                     "columns": [
-                        { "data": "facebookId" },
+                       
+                        { "data": "facebookImage" },
+                        { "data": "nombre" },
                         { "data": "likes" },
                         { "data": "link" },
-                        { "data": "nombre" },
-                        { "data": "ciudad" },
                         { "data": "categoria" }
-                    ]
+                    ],
+                    "columnDefs": [
+            {
+                // The `data` parameter refers to the data for the cell (defined by the
+                // `data` option, which defaults to the column being worked with, in
+                // this case `data: 0`.
+                "render": function ( data, type, row ) {
+                    var imgLink=data;
+                    var imgTag = '<img src="' + imgLink + '"/>';
+                    return imgTag;
+                },
+                "targets": 0
+            }
+          
+        ]
+                    
                 } );
+                
             } );
             /*$(document).ready(function() {
                 /* code here */ 
@@ -50,12 +67,12 @@ and open the template in the editor.
         <table id="example" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
-                <th>facebookId</th>
-                <th>likes</th>
-                <th>link</th>
-                <th>nombre</th>
-                <th>ciudad</th>
-                <th>categoria</th>
+                <th>Avatar</th>
+                <th>Nombre</th>
+                <th>Likes</th>
+                <th>Link</th>
+                <th>Categoria</th>
+              
             </tr>
         </thead>
  
