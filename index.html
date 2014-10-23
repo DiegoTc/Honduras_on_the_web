@@ -12,6 +12,12 @@ and open the template in the editor.
         <link href="//cdn.datatables.net/1.10.3/css/jquery.dataTables.min.css" rel="stylesheet">
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="//cdn.datatables.net/1.10.3/js/jquery.dataTables.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script>
             var json1, copyjson=[];
             $(document).ready(function() {
@@ -36,8 +42,18 @@ and open the template in the editor.
                     var imgTag = '<img src="' + imgLink + '"/>';
                     return imgTag;
                 },
-                "targets": 0
-            }
+                "targets": 0,
+            },
+            {
+                
+                "render": function ( data, type, row ) {
+                    var name=data;
+                    var ahref = '<a href="' + row[3] + '+"/>'+name+'<a>';
+                    return ahref;
+                },
+                "targets": 1
+            },
+             { "visible": false,  "targets": [ 3 ] }
           
         ]
                     
