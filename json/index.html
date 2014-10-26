@@ -1,0 +1,268 @@
+    <!DOCTYPE html>
+    <!--
+  To change this license header, choose License Headers in Project Properties.
+  To change this template file, choose Tools | Templates
+  and open the template in the editor.
+  -->
+    <html>
+        <head>
+            <title>TODO supply a title</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width">
+            <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+            <script src="jquery.ba-bbq.js"></script>
+        </head>
+        <body>
+            <div id="fb-root"></div>
+             <script>
+           var access_token,user_token,ii=0;
+           var newUrl;
+           var deposit=[];
+           var finaldeposit=[];
+           var finaldepositImage=[];
+           var sorted;
+          window.fbAsyncInit = function() {
+ 
+              FB.init({
+                appId      : '312776932241363',
+                xfbml      : true,
+                version    : 'v2.1',
+                status     : true, // check login status
+                cookie     : true, // enable cookies to allow the server to access the session
+                oauth      : true
+            });
+ 
+              FB.Event.subscribe('auth.authResponseChange', function(response){
+                if (response.status === 'connected'){
+                    document.getElementById("message").innerHTML +=  "<br>Connected to Facebook";
+                }
+                else if (response.status === 'not_authorized'){
+                    document.getElementById("message").innerHTML +=  "<br>Failed to Connect";
+                }else{
+                    document.getElementById("message").innerHTML +=  "<br>Logged Out";
+                }
+              });
+ 
+              function Login(){
+                    FB.login(function(response) {
+                            if (response.authResponse){
+                                    //getUserInfo();
+                                    //access_token =   FB.getAuthResponse()['accessToken'];
+                                    //user_token
+                                    //console.log('Access Token = '+ access_token);
+                            } else
+                            {
+                     console.log('User cancelled login or did not fully authorize.');
+                            }
+                    },{scope: 'email,user_photos,user_videos,publish_actions'});
+            }
+ 
+            function getUserInfo() {
+                FB.api('/me', function(response) {
+                    var str="<b>Name</b> : "+response.name+"<br>";
+                      str +="<b>Link: </b>"+response.link+"<br>";
+                      str +="<b>Username:</b> "+response.username+"<br>";
+                      str +="<b>id: </b>"+response.id+"<br>";
+                      str +="<b>Email:</b> "+response.email+"<br>";
+                      str +="<input type='button' value='Get Photo' onclick='getPhoto();'/>";
+                      str +="<input type='button' value='Logout' onclick='Logout();'/>";
+                      document.getElementById("connect").innerHTML=str;
+                    });
+        }
+ 
+            function getPhoto()
+            {
+              FB.api('/me/picture?type=normal', function(response) {
+ 
+                      var str="<br/><b>Pic</b> : <img src='"+response.data.url+"'/>";
+                      document.getElementById("connect").innerHTML+=str;
+ 
+        });
+ 
+            }
+            function Logout()
+            {
+                    FB.logout(function(){document.location.reload();});
+            };
+ 
+              function token(){
+                FB.api('/oauth/access_token', 'GET', { client_id: '312776932241363',client_secret: '9f770dfa17e1f3eeaa9921d42e8a37fa',grant_type: 'client_credentials' }, function(response) {
+                  if (!response || response.error) {
+                    console.log(response);
+                    alert('Error occured');
+                  } else {
+                    token1=response;
+                    console.log(response);
+                  }
+                });
+            }
+ 
+            function publish(){
+               var body = 'Reading JS SDK documentation';
+                FB.api('/me/feed', 'post', { message: body }, function(response) {
+                  if (!response || response.error) {
+                    alert('Error occured');
+                  } else {
+                    alert('Post ID: ' + response.id);
+                  }
+                });
+            };
+ 
+ 
+ 
+            function search(){
+                //var urlSearch = "search?limit=150&type=geo_locations&q=Utila&type=adcity&access_token&type=page&=312776932241363|9f770dfa17e1f3eeaa9921d42e8a37fa";
+                var urlSearch = "search?limit=150&q=pijudo&access_token&type=page&=312776932241363|9f770dfa17e1f3eeaa9921d42e8a37fa";
+                FB.api(urlSearch, function(response) {
+                  if (!response || response.error) {
+                    console.log(response);
+                    alert('Error occured');
+                  } else {
+                    console.log("First Function search() "+ response.data.length);
+                    console.log("Url: "+ response.paging.next);
+                    newUrl=response.paging.next;
+                    for(i =0;i< response.data.length;i++){
+                       deposit.push(response.data[i]);
+                   }
+                   getLikes(deposit);
+                   searchAgain(newUrl);
+                }
+              });
+ 
+          };
+ 
+          function searchAgain(urlSearch){
+           var params = jQuery.deparam.querystring(urlSearch);
+           var depos =[];
+           if(urlSearch != undefined){
+               FB.api('/search',params, function(response) {
+                    if(urlSearch !=""){
+                      if (!response || response.error) {
+                        console.log(response);
+                        alert('Error occured');
+                      } else {
+                        console.log("Second Function search()" + response.data.length +"\n");
+                        console.log("Url "+ response.paging.next + "\n");
+                        newUrl=response.paging.next;
+                        for(i =0;i< response.data.length;i++){
+                          depos.push(response.data[i]);
+                        }
+                        searchAgain(newUrl);
+                      }
+                    }
+                    else{
+                      console.log(JSON.stringify(deposit));
+                    }
+                    getLikes(depos);
+                  });
+           }
+ 
+          };
+ 
+          function getLikes(deposit){
+              for(i=0;i<deposit.length;i++){
+                  var url = "/"+deposit[i].id;
+                   FB.api(url,function(response) {
+                       if (!response || response.error) {
+                        console.log(response);
+                        alert('Error occured');
+                      } else {
+                        var depObj={};
+                        //depObj.id=i+1;
+                        depObj.facebookId=response.id;
+                        depObj.likes=response.likes;
+                        depObj.link=response.link;
+                        depObj.nombre=response.name;
+                        depObj.ciudad="Utila";
+                        depObj.categoria=response.category;
+                        finaldeposit.push(depObj);
+                      }
+ 
+                  });
+              }
+          };
+          
+          function getImages(deposit){
+            //finaldepositImage  
+            for(i=0;i<deposit.length;i++){
+                  var url = "/"+deposit[i].facebookId+"/picture";
+                  id = deposit[i].facebookId;
+                   FB.api(url,function(response,id) {
+                       if (!response || response.error) {
+                        console.log(response);
+                        alert('Error occured');
+                      } else {
+                          //console.log(response);
+                        var depObj={};
+                        finaldeposit[ii].facebookImage=response.data.url;
+                        ii++;
+                        //depObj.id=i+1;
+                        depObj.image=response.data.url;
+                        finaldepositImage.push(depObj);
+                      }
+ 
+                  });
+              }
+          };
+ 
+          $('#connect').click(function() {
+              Login();
+          });
+ 
+          $('#publish').click(function() {
+              //publish();
+              /*
+              finaldeposit.sort(function(a, b){
+                return a.likes == b.likes ? 0 : +(a.likes < b.likes) || -1;
+              });*/
+              var json= (function() {
+                    var json = null;
+                    $.ajax({
+                        'async': false,
+                        'global': false,
+                        'url': "topToLess.json",
+                        'dataType': "json",
+                        'success': function (data) {
+                            finaldeposit=data;
+                            getImages(finaldeposit);
+                        }
+                    });
+                   
+                })();
+              
+              
+          });
+ 
+          $('#search').click(function() {
+              search();
+              finaldeposit.sort(function(a, b){
+                return a.likes == b.likes ? 0 : +(a.likes < b.likes) || -1;
+              });
+              //token();
+           });
+       };
+ 
+ 
+ 
+         (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+ 
+ 
+ 
+ 
+ 
+       </script>
+            <div>TODO write content</div>
+            <div id="connect"><button>Connect with Facebook</button></div>
+            <div id="publish"><button>Publish with Facebook</button></div>
+            <div id="search"><button>Search with Facebook</button></div>
+            <div id="message">
+    Logs:<br/>
+    </div>
+        </body>
+    </html>

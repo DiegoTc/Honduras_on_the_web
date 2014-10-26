@@ -12,24 +12,57 @@ and open the template in the editor.
         <link href="//cdn.datatables.net/1.10.3/css/jquery.dataTables.min.css" rel="stylesheet">
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="//cdn.datatables.net/1.10.3/js/jquery.dataTables.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script>
-            var json1, copyjson=[], pictures;
-            /*$(document).ready(function() {
-                $('#example').dataTable( {
+            var json1, copyjson=[];
+            $(document).ready(function() {
+               $('#example').dataTable( {
                     "ajax": "topToLess.json",
+                    "pageLength": 10,
                     "columns": [
-                        { "data": "facebookId" },
+
+                        { "data": "facebookImage" },
+                        { "data": "nombre" },
                         { "data": "likes" },
                         { "data": "link" },
-                        { "data": "nombre" },
-                        { "data": "ciudad" },
                         { "data": "categoria" }
-                    ]
+                    ],
+                    "columnDefs": [
+            {
+                // The `data` parameter refers to the data for the cell (defined by the
+                // `data` option, which defaults to the column being worked with, in
+                // this case `data: 0`.
+                "render": function ( data, type, row ) {
+                    var imgLink=data;
+                    var imgTag = '<img src="' + imgLink + '"/>';
+                    return imgTag;
+                },
+                "targets": 0,
+            },
+            {
+
+                "render": function ( data, type, row ) {
+                    var name=data;
+                    var ahref = '<a href="' + row[3] + '+"/>'+name+'<a>';
+                    return ahref;
+                },
+                "targets": 1
+            },
+             { "visible": false,  "targets": [ 3 ] }
+
+        ]
+
                 } );
-            } );*/
-            $(document).ready(function() {
+
+            } );
+            /*$(document).ready(function() {
                 /* code here */
-                 var json= (function() {
+            /*     var json= (function() {
                     var json = null;
                     $.ajax({
                         'async': false,
@@ -37,24 +70,12 @@ and open the template in the editor.
                         'url': "topToLess.json",
                         'dataType': "json",
                         'success': function (data) {
-                            json=data;
-                            for(i=0;i<json.data.length;i++){
-                              var url="/"+json.data[i].facebookId+"/picture";
-                              FB.api(
-                                url,
-                                function (response) {
-                                  if (response && !response.error) {
-                                    /* handle the result */
-                                      console.log(response);
-                                  }
-                                }
-);
-                            }
+
                         }
                     });
 
                 })();
-            });
+            });*/
         </script>
     </head>
     <body>
@@ -62,12 +83,12 @@ and open the template in the editor.
         <table id="example" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
-                <th>facebookId</th>
-                <th>likes</th>
-                <th>link</th>
-                <th>nombre</th>
-                <th>ciudad</th>
-                <th>categoria</th>
+                <th>Avatar</th>
+                <th>Nombre</th>
+                <th>Likes</th>
+                <th>Link</th>
+                <th>Categoria</th>
+
             </tr>
         </thead>
 
