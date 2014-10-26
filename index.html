@@ -7,92 +7,219 @@ and open the template in the editor.
 <html>
     <head>
         <title>Honduras on Facebook</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link href="//cdn.datatables.net/1.10.3/css/jquery.dataTables.min.css" rel="stylesheet">
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="//cdn.datatables.net/1.10.3/js/jquery.dataTables.min.js"></script>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script>
-            var json1, copyjson=[];
-            $(document).ready(function() {
-               $('#example').dataTable( {
-                    "ajax": "topToLess.json",
-                    "pageLength": 10,
-                    "columns": [
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Las Paginas catrachas mas vistas en facebook">
+        <meta name="author" content="Diego Turcios">
 
-                        { "data": "facebookImage" },
-                        { "data": "nombre" },
-                        { "data": "likes" },
-                        { "data": "link" },
-                        { "data": "categoria" }
-                    ],
-                    "columnDefs": [
-            {
-                // The `data` parameter refers to the data for the cell (defined by the
-                // `data` option, which defaults to the column being worked with, in
-                // this case `data: 0`.
-                "render": function ( data, type, row ) {
+
+
+
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/scrolling-nav.css" rel="stylesheet">
+        <link href="css/jquery.dataTables.min.css" rel="stylesheet">
+
+    </head>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Top 100 Paginas catrachas en Facebook</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#intro">Top 100</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#where">De donde viene la informacion</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Sobre el proyecto</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Top 100 -->
+
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                  <p> Esta informacion esta basada hasta el 21 de Octubre del 2014</p>
+                  <table id = "example"class="table table-striped table-bordered mediaTable">
+                    <thead>
+                      <tr>
+                        <th>Avatar</th>
+                        <th>Nombre</th>
+                        <th>Likes</th>
+                        <th>Link</th>
+                        <th>Categoria</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- De donde viene la informacion -->
+    <section id="where" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>De donde viene la informacion</h1>
+                    <p>
+                      <br>Los datos se obtienen mediante un proceso automático que utiliza el Graph API de Facebook
+                      <br>La muestra trata de ser lo más precisa, pero puede que haya algún margen de error.
+                      <br>Ciertas paginas como la de figuras politicas, no aparecieron en el filtro con palabras claves catrachas, se agregaron manualmente.
+                      <br>La mayoria de paginas aparecen registradas en la ciudad de Utila, a pesar de no ser originarias de alli.
+                    </p>
+                    <canvas id="myChart" width="450" height="350"></canvas>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre el proyecto -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Sobre el proyecto</h1>
+                    <p>
+                      Inspirado en el proyecto de Brian Salazar de Costa Rica con su proyecto <a href="http://labs.avenidanet.com/index.html#.VEyrGNZKZVY">Fanpages de Costa Rica</a>.
+                      Un pequeño de mineria de datos.
+                    </p>
+                    <p>Toda la informacion viene de un JSON Statico. La data es del 21 de Octubre del 2014. La idea es automatizar el proceso, pero siempre sera necesario hacer una revision
+                      manual, ya que no todas las paginas ponene descripciones del pais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contacto</h1>
+                    <p>Dudas o ideas puden hacerlas en <a href="https://github.com/DiegoTc/Honduras_on_the_web/issues">Github</a> o escribirme un correo a
+                      <address><a href="mailto:diegoturciostc@gmail.com">diegoturciostc@gmail.com</a></address> </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/Chart.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script>
+        var json1, copyjson=[];
+        $(document).ready(function() {
+           $('#example').dataTable( {
+                "ajax": "topToLess.json",
+                "pageLength": 10,
+                "columns": [
+
+                    { "data": "facebookImage" },
+                    { "data": "nombre" },
+                    { "data": "likes" },
+                    { "data": "link" },
+                    { "data": "categoria" }
+                ],
+                "columnDefs": [
+                {
+                  "render": function ( data, type, row ) {
                     var imgLink=data;
                     var imgTag = '<img src="' + imgLink + '"/>';
                     return imgTag;
+                  },
+                    "targets": 0,
                 },
-                "targets": 0,
-            },
-            {
-
-                "render": function ( data, type, row ) {
+                {
+                  "render": function ( data, type, row ) {
                     var name=data;
-                    var ahref = '<a href="' + row[3] + '+"/>'+name+'<a>';
+                    var ahref = '<a href="' + row["link"] + '+"/>'+name+'<a>';
                     return ahref;
+                  },
+                    "targets": 1
                 },
-                "targets": 1
-            },
-             { "visible": false,  "targets": [ 3 ] }
-
-        ]
-
-                } );
+                { "visible": false,  "targets": [ 3 ] }
+              ]
 
             } );
-            /*$(document).ready(function() {
-                /* code here */
-            /*     var json= (function() {
-                    var json = null;
-                    $.ajax({
-                        'async': false,
-                        'global': false,
-                        'url': "topToLess.json",
-                        'dataType': "json",
-                        'success': function (data) {
 
-                        }
-                    });
+            var eventFired = function ( type ) {
+              var currentpage=$('select[name=example_length]').val();
+              if(currentpage == "10"){
+                $(".intro-section").css({"height": "150%"});
+              }
+              else if(currentpage == "25"){
+                $(".intro-section").css({"height": "330%"});
+              }
+              else if(currentpage == "50"){
+                $(".intro-section").css({"height": "610%"});
+              }
+              else if(currentpage == "100"){
+                $(".intro-section").css({"height": "1080%"});
+              }
+            };
 
-                })();
-            });*/
-        </script>
-    </head>
-    <body>
-        <div>TODO write content</div>
-        <table id="example" class="display" cellspacing="0" width="100%">
-        <thead>
-            <tr>
-                <th>Avatar</th>
-                <th>Nombre</th>
-                <th>Likes</th>
-                <th>Link</th>
-                <th>Categoria</th>
+             $('#example')
+        .on( 'length.dt',  function () { eventFired( 'length' ); } ).dataTable();
 
-            </tr>
-        </thead>
+            var ctx = $("#myChart").get(0).getContext("2d");
 
 
-    </table>
-    </body>
+            var data = {
+              labels: ["Utila", "San Pedro Sula", "Tegucigalpa", "Manual", "Roatan", "La Ceiba"],
+              datasets: [
+                  {
+                      label: "Ciudadas de origenes de las paginas",
+                      fillColor: "rgba(220,220,220,0.5)",
+                      strokeColor: "rgba(220,220,220,0.8)",
+                      highlightFill: "rgba(220,220,220,0.75)",
+                      highlightStroke: "rgba(220,220,220,1)",
+                      data: [60, 17, 13, 6, 2, 2]
+                  }              ]
+          };
+          var myBarChart = new Chart(ctx).Bar(data);
+
+        } );
+
+    </script>
+  </body>
 </html>
